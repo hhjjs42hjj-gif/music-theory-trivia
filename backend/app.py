@@ -8,6 +8,7 @@ It handles:
 - Managing game sessions
 """
 
+import os
 import random
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -214,4 +215,5 @@ def get_all_questions():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    debug_mode = os.environ.get('FLASK_DEBUG', 'false').lower() == 'true'
+    app.run(debug=debug_mode, port=5000)

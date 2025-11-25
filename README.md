@@ -61,6 +61,11 @@ music-theory-trivia/
 
    The API will be available at `http://localhost:5000`
 
+   For development with debug mode enabled:
+   ```bash
+   FLASK_DEBUG=true python app.py
+   ```
+
 ### Frontend Setup
 
 1. The frontend can be served using any static file server, or simply open `frontend/index.html` in a browser.
