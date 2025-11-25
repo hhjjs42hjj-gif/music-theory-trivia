@@ -89,9 +89,6 @@ QUESTIONS = [
     }
 ]
 
-# Store for tracking answered questions in a session (simplified)
-answered_questions = {}
-
 
 @app.route('/')
 def home():

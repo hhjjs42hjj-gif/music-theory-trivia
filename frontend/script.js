@@ -73,8 +73,8 @@ function renderStaff(notes = ['C/4', 'D/4', 'E/4', 'F/4', 'G/4', 'A/4', 'B/4', '
         });
     });
 
-    // Create a voice in 4/4 and add the notes
-    const voice = new Voice({ num_beats: notes.length, beat_value: 4 });
+    // Create a voice with strict mode disabled to allow flexible note counts
+    const voice = new Voice({ num_beats: 4, beat_value: 4 }).setStrict(false);
     voice.addTickables(staveNotes);
 
     // Format and justify the notes
