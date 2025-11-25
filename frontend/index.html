@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Theory Trivia</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- VexFlow library for rendering musical notation -->
+    <script src="https://cdn.jsdelivr.net/npm/vexflow@4.2.2/build/cjs/vexflow.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Music Theory Trivia</h1>
+            <p class="subtitle">Test your music theory knowledge!</p>
+        </header>
+
+        <main>
+            <!-- Question Display Section -->
+            <section id="question-section">
+                <div id="question-container">
+                    <p id="question-text">Loading question...</p>
+                </div>
+            </section>
+
+            <!-- Musical Staff Display Section -->
+            <section id="staff-section">
+                <div id="staff-container"></div>
+            </section>
+
+            <!-- Answer Options Section -->
+            <section id="answer-section">
+                <div id="answer-options"></div>
+            </section>
+
+            <!-- Feedback Section -->
+            <section id="feedback-section">
+                <div id="feedback-container" class="hidden">
+                    <p id="feedback-text"></p>
+                </div>
+            </section>
+
+            <!-- Controls Section -->
+            <section id="controls-section">
+                <button id="next-btn" class="hidden">Next Question</button>
+                <button id="start-btn">Start Game</button>
+            </section>
+
+            <!-- Score Display -->
+            <section id="score-section">
+                <div id="score-container">
+                    <span>Score: <span id="score">0</span></span>
+                    <span>Questions: <span id="questions-answered">0</span></span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Music Theory Trivia</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
