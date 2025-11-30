@@ -1,0 +1,14 @@
+# LilyPond build artifacts
+*.pdf
+*.midi
+*.mid
+*.ps
+
+# Editor files
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Node.js (if used in future)
+node_modules/
